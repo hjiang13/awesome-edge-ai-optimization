@@ -40,23 +40,38 @@ Papers involving perception, V2X, and vehicle–edge cooperation:
 ## 📡 3. Embedded AI / ESP32 / TinyML
 AI models designed for extremely constrained devices.
 
-### TinyML: Analysis of Xtensa LX6 Microprocessor for Neural Network Applications by ESP32 SoC  
-**Md Ziaul Haque Zim**, arXiv 2021.  
+## **MCUNet: Tiny Deep Learning on IoT Devices**  
+**Ji Lin, Wei-Ming Chen, Yujun Lin, John Cohn, Chuang Gan, Song Han, NeurIPS 2020**  
+🔗 https://proceedings.neurips.cc/paper/2020/hash/380d9c86004355ea4e6bf37c062b1f5a-Abstract.html  
+
+### **Summary:**  
+This paper presents **MCUNet**, an end-to-end TinyML framework that jointly designs:  
+
+1. **TinyNAS** — a resource-aware neural architecture search method that tailors the search space based on constraints such as SRAM, Flash, latency, or energy.  
+2. **TinyEngine** — an extremely lightweight inference engine optimized for microcontrollers, featuring global memory scheduling instead of layer-wise allocation.
+
+Together, TinyNAS + TinyEngine reduce SRAM usage by **3.4×**, outperform TF-Lite Micro and CMSIS-NN by **1.7–3.3×**, and achieve **>70% ImageNet top-1 accuracy** on commercial MCUs using **3.5× less SRAM** and **5.7× less Flash** compared to quantized MobileNetV2 or ResNet-18.
+
+The paper demonstrates that *ImageNet-scale inference is achievable on tiny microcontrollers*, pushing TinyML capabilities forward.
+
+### **Tags:**  
+[TinyML] [MCUNet] [NAS] [TinyEngine] [Memory Scheduling] [Microcontroller Inference]  
+
+
+---
+
+## **TinyML: Analysis of Xtensa LX6 Microprocessor for Neural Network Applications by ESP32 SoC**  
+**Md Ziaul Haque Zim, arXiv 2021**  
 🔗 https://arxiv.org/abs/2106.10652  
 DOI: https://doi.org/10.48550/arXiv.2106.10652
 
-**Summary:**  
-This paper analyzes the computational capability of the **Xtensa LX6 dual-core 32-bit microprocessor** inside the **ESP32 SoC** for TinyML workloads.  
-It evaluates the feed-forward speed of neural networks with **different input sizes and different numbers of hidden-layer neurons**, showing how model complexity affects inference latency on the ESP32.  
-The work demonstrates that ESP32—traditionally viewed as a low-power IoT device—can run basic neural network inference and serves as a practical platform for **lightweight TinyML applications** using frameworks like MicroPython and TensorFlow Lite Micro.
+### **Summary:**  
+This paper analyzes the computational ability of the **Xtensa LX6 dual-core processor** inside the ESP32 SoC for TinyML tasks. It benchmarks the feed-forward latency of neural networks with varying input sizes and hidden-layer configurations, showing how model complexity influences inference speed.
 
-**Tags:**  
-`[TinyML]` `[ESP32]` `[Xtensa LX6]` `[microcontroller inference]` `[embedded neural networks]`
-### ✔️ ESP32 / MCU Real Deployments
-- Paper Title (Year) — Summary…
+The results indicate that ESP32—often considered a low-power IoT microcontroller—can in fact perform lightweight neural network inference. With support from MicroPython and TensorFlow Lite Micro, ESP32 becomes a practical, low-cost platform for deploying TinyML applications.
 
-### ✔️ Energy Optimization
-- Paper Title (Year) — Summary…
+### **Tags:**  
+[TinyML] [ESP32] [Xtensa LX6] [microcontroller inference] [embedded neural networks]  
 
 
 ## 📊 4. Benchmarks and Datasets

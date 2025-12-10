@@ -73,6 +73,25 @@ The results indicate that ESP32—often considered a low-power IoT microcontroll
 ### **Tags:**  
 [TinyML] [ESP32] [Xtensa LX6] [microcontroller inference] [embedded neural networks]  
 
+---
+## **MicroNets: Neural Network Architectures for Deploying TinyML Applications on Commodity Microcontrollers**  
+**Colby Banbury, Chuteng Zhou, Igor Fedorov, Ramon Matas, Urmish Thakker, Dibakar Gope, Vijay Janapa Reddi, Matthew Mattina, Paul Whatmough, MLSys 2021**  
+🔗 https://proceedings.mlsys.org/paper/2021/hash/7ef605fc8dba5425d6965fbd4c8fbe1f-Abstract.html  
+
+### **Summary:**  
+This paper introduces **MicroNets**, a family of neural network architectures specifically optimized for deployment on **commodity MCUs** with strict constraints on latency, memory, and energy. The key insight driving the work is an observed linear relationship between **operation (op) count** and **latency** on microcontrollers. This enables the authors to treat op count as an efficient, hardware-agnostic proxy for latency in neural architecture search.
+
+Using this observation, the authors employ **Differentiable NAS (DNAS)** to search for architectures with minimal op count and low memory usage. The resulting MicroNet models are deployed using TensorFlow Lite Micro and demonstrate **state-of-the-art performance** on the three TinyMLPerf benchmark tasks:  
+
+- Visual wake words  
+- Audio keyword spotting  
+- Anomaly detection  
+
+All models and training scripts are available at: https://github.com/ARM-software/ML-zoo.
+
+### **Tags:**  
+[TinyML] [MicroNets] [NAS] [DNAS] [MCU Inference] [TinyMLPerf] [Resource-Constrained ML]
+
 
 ## 📊 4. Benchmarks and Datasets
 - OpenPilot dataset…

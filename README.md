@@ -40,9 +40,18 @@ Papers involving perception, V2X, and vehicle–edge cooperation:
 ## 📡 3. Embedded AI / ESP32 / TinyML
 AI models designed for extremely constrained devices.
 
-### ✔️ TinyML Fundamentals
-- Paper Title (Year) — Summary…
+### TinyML: Analysis of Xtensa LX6 Microprocessor for Neural Network Applications by ESP32 SoC  
+**Md Ziaul Haque Zim**, arXiv 2021.  
+🔗 https://arxiv.org/abs/2106.10652  
+DOI: https://doi.org/10.48550/arXiv.2106.10652
 
+**Summary:**  
+This paper analyzes the computational capability of the **Xtensa LX6 dual-core 32-bit microprocessor** inside the **ESP32 SoC** for TinyML workloads.  
+It evaluates the feed-forward speed of neural networks with **different input sizes and different numbers of hidden-layer neurons**, showing how model complexity affects inference latency on the ESP32.  
+The work demonstrates that ESP32—traditionally viewed as a low-power IoT device—can run basic neural network inference and serves as a practical platform for **lightweight TinyML applications** using frameworks like MicroPython and TensorFlow Lite Micro.
+
+**Tags:**  
+`[TinyML]` `[ESP32]` `[Xtensa LX6]` `[microcontroller inference]` `[embedded neural networks]`
 ### ✔️ ESP32 / MCU Real Deployments
 - Paper Title (Year) — Summary…
 

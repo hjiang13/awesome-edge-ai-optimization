@@ -1,2 +1,88 @@
-# awesome-edge-ai-optimization
-A curated collection of research papers on Edge Computing, Optimization, Autonomous Driving Systems, and AI-on-Device (ESP32/MCU)
+
+# Awesome Edge Computing Optimization & Autonomous Driving Papers
+A curated and continuously updated list of research papers on **edge computing**,  
+**performance optimization**, **autonomous driving systems**, and **AI on small devices**  
+(e.g., ESP32, microcontrollers, embedded systems).
+
+Maintained by: Hailong Jiang (Youngstown State University)
+
+---
+
+## 🔥 1. Edge Computing Optimization
+Papers focused on system-level or algorithmic optimization:
+
+### ✔️ Edge Offloading & Scheduling
+- Paper Title (Year) — Summary…
+- Paper Title (Year) — Summary…
+
+### ✔️ GPU / CPU Co-optimization
+- Paper Title (Year) — Summary…
+
+### ✔️ SIMD / Vectorization for Edge AI
+- Paper Title (Year) — Summary…
+
+---
+
+## 🚗 2. Autonomous Driving + Edge AI
+Papers involving perception, V2X, and vehicle–edge cooperation:
+
+### ✔️ Cooperative Perception
+- Paper Title (Year) — Summary…
+
+### ✔️ On-vehicle Optimization
+- Paper Title (Year) — Summary…
+
+### ✔️ Lightweight Models for Auto-Driving
+- Paper Title (Year) — Summary…
+
+---
+
+## 📡 3. Embedded AI / ESP32 / TinyML
+AI models designed for extremely constrained devices.
+
+### ✔️ TinyML Fundamentals
+- Paper Title (Year) — Summary…
+
+### ✔️ ESP32 / MCU Real Deployments
+- Paper Title (Year) — Summary…
+
+### ✔️ Energy Optimization
+- Paper Title (Year) — Summary…
+
+---
+
+## ⚙️ 4. Profiling, Compiler Optimization, and IR-level Approaches
+Your (Jiang group) research方向可以直接写在这里。
+
+### ✔️ MLIR-based Optimization
+- Paper Title (Year) — Summary…
+
+### ✔️ LLM for Code Optimization
+- Paper Title (Year) — Summary…
+
+---
+
+## 📊 5. Benchmarks and Datasets
+- OpenPilot dataset…
+- CARLA benchmark…
+- Edge server logs datasets…
+
+---
+
+## 🤝 Contributing
+Pull requests welcome!  
+If you want to add a paper, please include:
+- Title
+- Year / Venue
+- Link
+- 2–3 sentence summary
+
+---
+
+## ⭐ Star History
+(You can add a star-history badge later)
+
+---
+
+## 📄 License
+MIT License

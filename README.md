@@ -51,18 +51,8 @@ AI models designed for extremely constrained devices.
 
 ---
 
-## ⚙️ 4. Profiling, Compiler Optimization, and IR-level Approaches
-Your (Jiang group) research方向可以直接写在这里。
 
-### ✔️ MLIR-based Optimization
-- Paper Title (Year) — Summary…
-
-### ✔️ LLM for Code Optimization
-- Paper Title (Year) — Summary…
-
----
-
-## 📊 5. Benchmarks and Datasets
+## 📊 4. Benchmarks and Datasets
 - OpenPilot dataset…
 - CARLA benchmark…
 - Edge server logs datasets…

@@ -112,6 +112,48 @@ The paper concludes with a set of **open research challenges**, such as optimal 
 ### **Tags:**  
 [TinyML] [Survey] [Microcontrollers] [Resource-Constrained ML] [Model Compression] [Pruning] [Quantization] [IoT ML Workflow]
 
+## **vMCU: Coordinated Memory Management and Kernel Optimization for DNN Inference on MCUs**  
+**Size Zheng, Renze Chen, Meng Li, Zihao Ye, Luis Ceze, Yun Liang, MLSys 2024**  
+🔗 https://proceedings.mlsys.org/paper/2024/hash/xxxxx  *(use actual link)*  
+
+### **Summary:**  
+This paper introduces **vMCU**, a coordinated memory management and kernel-level optimization framework designed to overcome the extreme memory limitations of microcontrollers (MCUs) when running deep neural networks. Unlike prior approaches that treat kernel execution and memory management separately, vMCU virtualizes MCU memory into a unified pool and divides it into **kernel-specific segments**. These segments can be loaded, stored, and overlapped dynamically during DNN execution.
+
+The key insight is that **fine-grained segment-level memory control** enables overlapping lifetimes of tensors, eliminating the need to materialize all intermediate tensors simultaneously. As a result, vMCU effectively reduces the memory footprint of DNN inference.
+
+Experiments on ARM Cortex-M4 and Cortex-M7 processors show:  
+- **12.0% → 49.5% reduction in RAM usage**  
+- **20.6% → 53.0% reduction in energy consumption**  
+compared to state-of-the-art MCU inference baselines.
+
+Overall, vMCU reduces memory bottlenecks by **up to 61.5%**, enabling deployment of larger and more sophisticated neural networks on low-end MCUs.
+
+### **Tags:**  
+[TinyML] [MCU Memory Management] [Kernel Optimization] [vMCU] [Low-end MCU Inference] [Memory Virtualization]
+
+## **Accelerating TinyML Inference on Microcontrollers Through Approximate Kernels**  
+**Giorgos Armeniakos, Georgios Mentzos, Dimitrios Soudris, ICECS 2024 (IEEE)**  
+🔗 https://ieeexplore.ieee.org/document/10848979  
+DOI: 10.1109/ICECS61496.2024.10848979  
+
+### **Summary:**  
+This paper explores the use of **approximate computing** combined with **kernel design optimization** to accelerate CNN inference on microcontrollers (MCUs), where strict limits on RAM and Flash pose major challenges for TinyML deployment.
+
+The authors propose a **kernel-based approximation framework** that:  
+1. **Unpacks convolution operands** and computes their significance offline.  
+2. Uses this significance to drive a **computation-skipping strategy**, selectively omitting low-impact operations.  
+3. Explores a design space to identify **Pareto-optimal trade-offs** between accuracy and latency.
+
+Evaluations on an STM32-Nucleo MCU with CNNs trained on CIFAR-10 show:  
+- **≈21% latency reduction** with *no degradation* in Top-1 accuracy (for high-accuracy settings).  
+- Even larger reductions when slight accuracy loss is acceptable.
+
+The results demonstrate that **approximated kernels can substantially accelerate inference on resource-constrained MCUs**, especially when task tolerates minor precision trade-offs.
+
+### **Tags:**  
+[TinyML] [Approximate Computing] [Approximate Kernels] [MCU Inference] [Latency Optimization] [Edge AI]
+
+
 ## 📊 4. Benchmarks and Datasets
 - OpenPilot dataset…
 - CARLA benchmark…

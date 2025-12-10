@@ -4,7 +4,7 @@ A curated and continuously updated list of research papers on **edge computing**
 **performance optimization**, **autonomous driving systems**, and **AI on small devices**  
 (e.g., ESP32, microcontrollers, embedded systems).
 
-Maintained by: Hailong Jiang (Youngstown State University)
+Maintained by: Hailong Jiang, Ph.D. (hjiang@ysu.edu Youngstown State University)
 
 ---
 

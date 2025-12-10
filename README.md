@@ -153,6 +153,29 @@ The results demonstrate that **approximated kernels can substantially accelerate
 ### **Tags:**  
 [TinyML] [Approximate Computing] [Approximate Kernels] [MCU Inference] [Latency Optimization] [Edge AI]
 
+## **Can LLMs Revolutionize the Design of Explainable and Efficient TinyML Models?**  
+**Christophe El Zeinaty, Wassim Hamidouche, Glenn Herrou, Daniel Menard, Merouane Debbah, arXiv 2025**  
+🔗 https://arxiv.org/abs/2504.09685  
+DOI: https://doi.org/10.48550/arXiv.2504.09685  
+
+### **Summary:**  
+This paper proposes a novel framework for designing **efficient, interpretable TinyML neural architectures** using large language models (LLMs) as the core engine for neural architecture search (NAS). The method integrates three components:  
+
+1. **LLM-guided hierarchical NAS** balancing accuracy, computation (MACs), and memory usage.  
+2. **Vision Transformer (ViT)–based knowledge distillation** to enhance generalization without increasing model size.  
+3. **An explainability module** that helps derive interpretable architecture decisions.
+
+Using Pareto optimization and KD, the authors refine architectures under strict MCU constraints. On CIFAR-100, the three proposed TinyML-tailored models (LMaNet-Elite, LMaNet-Core, QwNet-Core) achieve:  
+- **74.50%**, **74.20%**, and **73.00%** accuracy  
+- All within **<100M MACs**  
+- Satisfying the **320 KB SRAM budget** of STM32H7 microcontrollers  
+
+These results surpass strong SOTA TinyML baselines such as **MCUNet-in3/in4** and **XNNpack-derived models**, highlighting the potential of combining **LLM-driven NAS + KD + explainability** for generating deployable and efficient MCU models.
+
+### **Tags:**  
+[TinyML] [LLM-guided NAS] [Explainability] [Knowledge Distillation] [Model Compression] [MCU Deployment] [Efficient Architecture Search]
+
+
 ## 4. Kernel Generation
 
 ## **Reinforcement Tuning Open Source LLMs for Kernel Generation**  

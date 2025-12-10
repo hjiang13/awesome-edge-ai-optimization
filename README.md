@@ -153,8 +153,30 @@ The results demonstrate that **approximated kernels can substantially accelerate
 ### **Tags:**  
 [TinyML] [Approximate Computing] [Approximate Kernels] [MCU Inference] [Latency Optimization] [Edge AI]
 
+## 4. Kernel Generation
 
-## 📊 4. Benchmarks and Datasets
+## **Reinforcement Tuning Open Source LLMs for Kernel Generation**  
+**Aksh Garg, Jeffrey Heo, Megan Mou, Stanford University**  
+🔗 *(add arXiv/URL if available)*  
+
+### **Summary:**  
+This paper investigates reinforcement learning (RL)–based post-training methods to enhance open-source LLMs’ ability to generate **correct and efficient CUDA kernels**. The authors first apply supervised fine-tuning (SFT) on rollouts from GPT-4.1 to densify reward signals for code generation tasks. They then introduce **Group Relative Policy Optimization (GRPO)** with a composite reward function that includes:
+
+- **Compilability**  
+- **Functional correctness**  
+- **Relative runtime speed**
+
+Using the **KernelBench** benchmark, the tuned LLaMA-8B model achieves:  
+- **25% correctness (up from 0%)**  
+- **Avg runtime within 2.5× of native PyTorch kernels**  
+- Closing **one-third of the gap** to GPT-4.1 CUDA kernel quality  
+
+The authors also propose an **LLM-as-a-judge mechanism** to densify sparse rewards, demonstrating that such reward engineering is critical for bootstrapping functional kernel generation in low-resource open-source models. The approach provides a practical recipe for improving code generation where baseline RL methods typically fail due to sparse or zero rewards.
+
+### **Tags:**  
+[LLM4Code] [Kernel Generation] [RLHF] [GRPO] [CUDA] [LLM-as-a-Judge] [Compiler Optimization] [Open-Source Models]
+
+## 📊 5. Benchmarks and Datasets
 - OpenPilot dataset…
 - CARLA benchmark…
 - Edge server logs datasets…

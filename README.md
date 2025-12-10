@@ -92,6 +92,25 @@ All models and training scripts are available at: https://github.com/ARM-softwar
 ### **Tags:**  
 [TinyML] [MicroNets] [NAS] [DNAS] [MCU Inference] [TinyMLPerf] [Resource-Constrained ML]
 
+## **Machine Learning for Microcontroller-Class Hardware: A Review**  
+**Swapnil Sayan Saha, Sandeep Singh Sandha, Mani Srivastava, IEEE (Review Paper)**  
+🔗 https://ieeexplore.ieee.org/document/xxxxx  *(use your actual link)*  
+
+### **Summary:**  
+This comprehensive survey reviews the full stack of technologies required to enable **machine learning on microcontroller-class hardware**—devices with extremely limited compute, memory, and energy budgets. The paper outlines how conventional ML workflows must be re-engineered when targeting ultraresource-constrained IoT nodes.
+
+The authors propose a **closed-loop TinyML development workflow** that includes:  
+- Data engineering tailored to low-end devices  
+- Feature projection and compact representation  
+- Pruning, quantization, and encoding for efficiency  
+- Deployment workflows that respect strict compute & latency constraints  
+
+The survey highlights several representative TinyML applications (image recognition, anomaly detection, speech, control tasks, mHealth, visual wake words) and provides both qualitative and numerical insights into model development across these scenarios.
+
+The paper concludes with a set of **open research challenges**, such as optimal model compression, energy-aware NAS, cross-platform TinyML benchmarking, and addressing the gap between algorithmic advances and hardware capabilities.
+
+### **Tags:**  
+[TinyML] [Survey] [Microcontrollers] [Resource-Constrained ML] [Model Compression] [Pruning] [Quantization] [IoT ML Workflow]
 
 ## 📊 4. Benchmarks and Datasets
 - OpenPilot dataset…
